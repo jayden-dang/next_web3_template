@@ -7,7 +7,7 @@ import {mainnet, sepolia} from 'wagmi/chains'
 
 const config = createConfig(
   getDefaultConfig({
-    alchemyId: process.env.ALCHEMY_ID, 
+    alchemyId: process.env.ALCHEMY_ID,
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "",
     chains: [mainnet, sepolia],
 
@@ -31,6 +31,12 @@ const WalletProvider = ({children}: {children: ReactNode}) => {
     </WagmiConfig>
   );
 };
+
+declare module 'wagmi' {
+  interface Register {
+    config: typeof config
+  }
+}
 
 
 export default WalletProvider;

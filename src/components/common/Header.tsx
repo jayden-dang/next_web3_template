@@ -77,7 +77,7 @@ const Header = (props: IHeaderProps) => {
                 04 //
               </p>
               <li className="text-[15px] text-gray-600 group-hover:underline">
-                Learn More
+                Courses
               </li>
             </Link>
           </ul>
