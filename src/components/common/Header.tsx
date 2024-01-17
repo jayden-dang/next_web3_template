@@ -68,6 +68,18 @@ const Header = (props: IHeaderProps) => {
                 Github
               </li>
             </Link>
+            <Link
+              href="https://openedu101.com"
+              target="_blank"
+              className="flex flex-col items-end justify-end group"
+            >
+              <p className="text-[12px] text-gray-500 group-hover:animate-ping">
+                04 //
+              </p>
+              <li className="text-[15px] text-gray-600 group-hover:underline">
+                Learn More
+              </li>
+            </Link>
           </ul>
         </nav>
         <ConnectKitButton showAvatar={true} />
