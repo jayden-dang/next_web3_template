@@ -93,8 +93,8 @@ export function CheckIn() {
                 onClick={() => mint?.()}
               >
                 {isMintLoading && "Waiting for approval"}
-                {isMintStarted && "Minting..."}
-                {!isMintLoading && !isMintStarted && "Mint"}
+                {isMintStarted && "Loading..."}
+                {!isMintLoading && !isMintStarted && "Check in"}
               </button>
             )}
           </div>
