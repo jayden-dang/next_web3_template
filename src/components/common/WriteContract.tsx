@@ -13,7 +13,7 @@ import FlipCard, { BackCard } from "./FlipCard";
 import ABI from "../../abi/devcon.json";
 
 const contractConfig = {
-  address: "0x9759063Bc84a6844dc58338cbdfAB9d6eF57f639",
+  address: "0x4BaDd6b763D23258Fd89d57C44D10f86dAc63E45",
   abi: ABI,
 } as const;
 
@@ -122,11 +122,11 @@ export function CheckIn() {
                 <p style={{ marginTop: 12 }}>
                   View on {""}
                   <a
-                    href={`https://testnet.bscscan.com/tx/${mintData?.hash}`}
+                    href={`https://goerli.etherscan.io/tx/${mintData?.hash}`}
                     target="_blank"
                     className="underline"
                   >
-                    BSCScan
+                    EtherScan
                   </a>
                 </p>
               </div>
